@@ -1,0 +1,15 @@
+<%- include('./includes/loginHeader.ejs') %> 
+        <div class="background-main">
+            <h2>NOME DA EMPRESA</h2>
+            <form class="login-form" method="post" action="/login">
+                <input type="hidden" name="_csrf" value="<%=csrfToken%>" class="csrf">
+                <label for="user">Usuário</label>
+                <input type="text" id="user" name="user">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password">
+                <button type="submit" class="login-button">Entrar</button>
+            </form>
+            <div class="login-error" style=<%=visibility%>>Usuário ou senha incorretos</div>
+        </div>
+    
+<%- include('./includes/footer.ejs') %>

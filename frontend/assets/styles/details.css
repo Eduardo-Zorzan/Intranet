@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-light-green: rgb(204, 239, 234);
+    --color-light-blue: rgb(197, 224, 234);
+    --color-light-cian: rgb(222, 254, 240);
+    --color-dark-blue-green: rgb(91, 192, 190);
+    --color-darker-blue-green: rgb(82, 161, 160);
+    --color-green-darker: rgb(26, 144, 171);
+}
+
+.details-patient-screen {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container-details {
+    width: 60vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: var(--color-darker-blue-green);
+}
+
+.close-container-details {
+    width: 60vw;
+    height: 3vh;
+    align-self: flex-start;
+
+}
+
+.close-details {
+    width: 2vmin;
+    height: 2vmin;
+    background-color: var(--color-darker-blue-green);
+    margin: 1vmin 0 0 2vmin;
+    font-size: 1.4em;
+    border: none;
+}
+
+.close-details:hover {
+    cursor: pointer;
+}
+
+.details-form {
+    display: flex;
+    align-items: center;
+    height: 42vh;
+    width: 10vw;
+}
+
+.input-details-container {
+    margin-top: 2vh;
+    justify-self: flex-start;
+    display: grid;
+    grid-template-rows: repeat(5, 7vh);
+    grid-template-columns: 8vw 30vw;
+    width: 50vw;
+    margin-left: 2vw;
+}
+
+.details-form input {
+    height: 3vh;
+    font-size: 1.3em;
+    margin: 1vmin;
+    top: 0;
+}
+
+.details-form label {
+    font-size: 1.5em;
+    margin: 1vmin;
+    top: 0;
+    text-align: center;
+}
+ 
+.button-details-form {
+    align-self: center;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4vmin;
+}
+
+.button-details-form button {
+    width: 15vw;
+    height: 10vh;
+    margin-left: 2.5vw;
+}
+
+.del-details, .submit-details {
+    background-color: var(--color-dark-blue-green);
+    border: none;
+}
+
+.del-details:hover, .submit-details:hover {
+    background-color: var(--color-light-blue);
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<%- include('./includes/header.ejs') %> 
+<input type="hidden" value="<%=dateFromServer%>" id="dateFromServer">
+<input type="hidden" value="<%=consultationsFinished%>" id="consultations-finished">
+<input type="hidden" value="<%=consultationsNotFinished%>" id="consultations-not-finished">
+<div class="calendar-background">
+    <div class="calendar-grid"></div>
+    <div class="display-month">
+        <h1></h1>
+    </div>
+    <form action="/calendar" method="post">
+        <input type="hidden" name="_csrf" value="<%=csrfToken%>" class="csrf">
+        <input type="hidden" name="actualDate" value="" id="actualDate">
+        <input type="hidden" name="statusButtons" value="" id="statusButtons">
+        <button type="submit" id="previous">ANTERIOR</button>
+        <button type="submit" id="next">PRÓXIMO</button>
+    </form>
+</div>
+<%- include('./includes/footer.ejs') %>

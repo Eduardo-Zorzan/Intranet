@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-light-green: rgb(204, 239, 234);
+    --color-light-blue: rgb(197, 224, 234);
+    --color-light-cian: rgb(222, 254, 240);
+    --color-dark-blue-green: rgb(91, 192, 190);
+    --color-darker-blue-green: rgb(82, 161, 160);
+    --color-green-darker: rgb(26, 144, 171);
+}
+.index {
+    list-style-type: none;
+    display: flex;
+    gap: 5vmax;
+    margin: 0 5vmax 0 0;
+    font-size: 2em;
+    z-index: 1;
+}
+.index a {
+    background-color: var(--color-darker-blue-green);
+    border: solid var(--color-darker-blue-green) 0.5vmin;
+    border-radius: 1vmin;
+    width: 20vw;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    
+}
+.index a:hover {
+    background-color: var(--color-light-blue);
+    border: solid var(--color-light-blue) 0.5vmin;
+    border-radius: 1vmin;
+}
+.background table {
+    align-self: center;
+    margin: 0;
+    border: 1vmin black solid;
+}
+.background tr {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 18vmax);
+}
+.background td, .background th {
+   border: solid black 0.2vmin;
+    font-size: 1.2em;
+}
+.new-patient {
+    position: fixed;
+    right: 2vmax;
+    bottom: 2vh;
+    width: 10vmax;
+    height: 5vmin;
+    background-color: var(--color-darker-blue-green);
+    border-radius: 5vmin;
+    border: var(--color-darker-blue-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.new-patient a {
+    color: black;
+    text-decoration: none;
+}
+#opacity {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-light-cian);
+    opacity: 0.6;
+    visibility: hidden;
+}
+.new-patient:hover {
+    cursor: pointer;
+    background-color: var(--color-light-blue);
+}
+.container-table {
+   display: flex;
+   margin: 5vh 0 0 0;
+   width: 100vw;
+   align-self: center;
+   justify-content: center;
+}
+.container-table table {
+    background-color: var(--color-light-green);
+    display: block;
+    height: 80vh;
+    border: solid var(--color-light-green) 3vmin;
+    border-radius: 2vw;
+    overflow: auto;
+}
+.new-patient-screen {
+    position: fixed;
+    width: 100vw;
+}

@@ -1,0 +1,14 @@
+<%- include('./includes/loginHeader.ejs') %> 
+    <div class="container-home">
+        <img src="./assets/imgs/logo.png" alt="">
+        <input type="hidden" id="token" value="<%=token%>">
+        <ul>
+            <li>
+                <a class="data" href="/data">DADOS</a>
+            </li>
+            <li>
+                <a class="agenda" href="/calendar">AGENDA</a>
+            </li>
+        </ul>
+    </div>
+<%- include('./includes/footer.ejs') %>

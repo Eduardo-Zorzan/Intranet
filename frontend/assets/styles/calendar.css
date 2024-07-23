@@ -1,0 +1,100 @@
+.calendar-background {
+    height: 85vh;
+    width: 95vw;
+    background-color: var(--color-light-green);
+    border-radius: 5vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar-grid {
+    height: 95%;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(7, 13.5%);
+    gap: 1%;
+}
+
+.day {
+    background-color: var(--color-dark-blue-green);
+    display: flex;
+    flex-direction: column;
+    min-height: 12vh;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+}
+
+.day div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.day h1 {
+    margin: 1vh 0.5vw 0 0.5vw;
+    font-size: 1.4em;
+}
+
+.preview-consultations-finished, .preview-consultations-not-finished {
+    font-size: 1.15em;
+    margin: 0.25vmax;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding: 0.25vmin;
+    border-radius: 1vmin;
+    font-weight: 200;
+}
+
+.preview-consultations-finished {
+    background-color: rgb(4, 128, 78);
+}
+
+.preview-consultations-not-finished {
+    background-color: rgb(145, 138, 4);
+}
+
+#preview-consultations {
+    align-self: flex-start;
+    display: grid;
+    grid-template-rows: minmax(3vh, 4vh) minmax(3vh, 4vh);
+}
+
+.actualDay {
+    background-color: var(--color-darker-blue-green);
+}
+
+.adjacent {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.display-month {
+    position: fixed;
+    bottom: 2vh;
+}
+
+.calendar-background form {
+    position: fixed;
+    bottom: 2vh;
+    right: 4vw;
+    width: 24vw;
+    display: flex;
+    gap: 4vmin;
+}
+
+.calendar-background button {
+    width: 10vw;
+    height: 4vh;
+    background-color: var(--color-darker-blue-green);
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.calendar-background button:hover {
+    cursor: pointer;
+    background-color: var(--color-light-blue);
+}
+

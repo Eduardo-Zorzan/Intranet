@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color-light-green: rgb(204, 239, 234);
+    --color-light-blue: rgb(197, 224, 234);
+    --color-light-cian: rgb(222, 254, 240);
+    --color-dark-blue-green: rgb(91, 192, 190);
+    --color-middle-blue-green: rgb(90, 207, 207);
+    --color-darker-blue-green: rgb(82, 161, 160);
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.close {
+    position: fixed;
+    width: 2vmin;
+    height: 2vmin;
+    background-color: var(--color-darker-blue-green);
+    border: none;
+    margin: 0 0 0 2vmin;
+    top: 24vh;
+    font-size: 1.4em
+
+}
+.close:hover {
+    cursor: pointer;
+}
+.newPatient-form {
+    background-color: var(--color-darker-blue-green);
+    display: flex;
+    flex-direction: column;
+    width: 45vmin;
+    height: 45vmin;
+    border: 6vmin solid var(--color-darker-blue-green);
+    border-radius: 3vmin;
+    font-size: 1.6em;
+    gap: 1vh;
+}
+.newPatient-form input {
+    height: 1.8em;
+    font-size: 0.8em;
+}
+.newPatient-form button {
+    height: 5vh;
+    width: 5vw;
+    align-self: flex-end;
+    margin: 2vh 0 0 0;
+    background-color: var(--color-dark-blue-green);
+    border: none;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+.newPatient-form button:hover {
+    cursor: pointer;
+    background-color: var(--color-light-blue);
+}

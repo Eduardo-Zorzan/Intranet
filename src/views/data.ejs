@@ -1,0 +1,22 @@
+<%- include('./includes/header.ejs') %> 
+    <div id="opacity"></div>
+    <div class="container-table">
+        <table>
+            <tbody>
+                <input type="hidden" name="_csrf" value="<%=csrfToken%>" class="csrf">
+                <input type="hidden" name="dataFromDB" value="<%=dataFromDB%>"  class="data-from-db" >
+                <tr class="titles">
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Cartão do SUS</th>
+                    <th>Data de Nascimento</th>
+                    <th>Observações</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <button class="new-patient">
+    <h3><a href="./assets/html/newPatient.html" class="new-patient">Novo Paciente</a></h3>
+    </button>
+    <div class="new-patient-screen"></div>
+<%- include('./includes/footer.ejs') %>
